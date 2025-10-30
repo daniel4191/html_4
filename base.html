@@ -50,13 +50,31 @@
         </section>
         <section id="formArea">
             <h2>RSVP</h2>
-            참석 불참
-            성함
-            메일 주소
-            자신의 유형 초식 동물 육식 동물 인간
-            알레르기가 있는 음식 달걀 우유 밀 대두
-            메세지
-            Send
+            <form action="" method="">
+                <p>
+                    <label><input type="radio" name="attend" value="참석" checked="checked">참석</label>
+                    <label><input type="radio" name="attend" value="불참">불참</label>
+                </p>
+                <p>성함<input type="text" name="user_name"></p>
+                <p>메일 주소<input type="email" name="user_mail"></p>
+                <p>
+                   자신의 유형
+                   <select name="user_type" id="">
+                        <option value="초식 동물">초식 동물</option>
+                        <option value="육식 동물">육식 동물</option>
+                        <option value="인간">인간</option>
+                   </select> 
+                </p>
+                <p>
+                    알레르기가 있는 음식
+                    <input type="checkbox" name="allergy" id="" value="달걀">달걀
+                    <input type="checkbox" name="allergy" id="" value="우유">우유
+                    <input type="checkbox" name="allergy" id="" value="밀">밀
+                    <input type="checkbox" name="allergy" id="" value="대두">대두
+                </p>
+                <p>메세지<textarea name="message" id=""></textarea></p>
+                <p>Send<input type="submit" value="Send"></p>
+            </form>
         </section>
     </main>
     <footer>
